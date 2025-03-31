@@ -63,6 +63,43 @@
         <div class="alert alert-success w-50" id="result1"></div>
     </div>
 
+    <div class="container mt-5">
+        <h2>TÍNH TIỀN ĐIỆN</h2>
+        <form class="w-50 row">
+            <div class="col-6">
+                <input placeholder="Nhập họ tên" type="text" class="form-control" id="inputHoTen">
+            </div>
+            <div class="col-6">
+                <input placeholder="Nhập số kw" type="number" class="form-control" id="inputSoKw">
+            </div>
+            <div>
+                <button id="btnSubmit2" type="button" class="btn btn-primary mt-3">Tính tiền điện</button>
+            </div>
+        </form>
+        <div class="alert alert-success w-50 mt-3" id="result2"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+        <form class="row" style="width: 650px;">
+            <div class="col-4">
+                <input placeholder="Nhập họ tên" type="text" class="form-control" id="inputHoTen2">
+            </div>
+            <div class="col-4">
+                <input placeholder="Tổng thu nhập năm" type="number" class="form-control" id="inputTongThuNhap">
+            </div>
+            <div class="col-4">
+                <input placeholder="Số người phụ thuộc" type="number" class="form-control" id="inputNguoiPhuThuoc">
+            </div>
+            <div>
+                <button id="btnSubmit3" type="button" class="btn btn-primary mt-3">Tính tiền thuế</button>
+            </div>
+        </form>
+        <div class="alert alert-success w-50 mt-3" id="result3"></div>
+    </div>
+
+
+
 
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -76,6 +113,8 @@
 
 
 <script src="./js/baitap1.js"></script>
+<script src="./js/baitap2.js"></script>
+<script src="./js/baitap3.js"></script>
 
 </body>
 
