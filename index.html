@@ -15,7 +15,7 @@
 <body>
 
     <div class="container">
-        <h2>Quản lý tuyển sinh</h2>
+        <h2>1.Quản lý tuyển sinh</h2>
         <!--BS:  12 col (w: 100%) , 12/3 (100%/3) => 4 
          tạo 2 cột/ 1 hàng => 12/2 => 6 (col-6)-->
         <form class="row g-3 w-50">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="container mt-5">
-        <h2>TÍNH TIỀN ĐIỆN</h2>
+        <h2>2.TÍNH TIỀN ĐIỆN</h2>
         <form class="w-50 row">
             <div class="col-6">
                 <input placeholder="Nhập họ tên" type="text" class="form-control" id="inputHoTen">
@@ -80,7 +80,7 @@
     </div>
 
     <div class="container mt-5">
-        <h2>TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+        <h2>3.TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
         <form class="row" style="width: 650px;">
             <div class="col-4">
                 <input placeholder="Nhập họ tên" type="text" class="form-control" id="inputHoTen2">
@@ -96,6 +96,32 @@
             </div>
         </form>
         <div class="alert alert-success w-50 mt-3" id="result3"></div>
+    </div>
+
+    <div class="container mt-5" >
+        <h2>4.TÍNH TIỀN CÁP</h2>
+        <form class="row" style="width: 700px;">
+            <div class="col-4">
+                <select class="form-select" id="selectKhachHang" onchange="toggleConnections()">
+                    <option>Chọn loại khách hàng</option>
+                    <option value="ND">Nhà dân</option>
+                    <option value="DN">Doanh nghiệp</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <input placeholder="Nhập mã khách hàng" type="text" class="form-control" id="inputMaKhachHang">
+            </div>
+            <div class="col-4">
+                <input placeholder="Số kênh cao cấp" type="number" class="form-control" id="inputSoKenh">
+            </div>
+            <div class="col-4 mt-3">
+                <input placeholder="Số kết nối" type="number" class="form-control" style="display: none;" id="inputSoKetNoi">
+            </div>
+            <div>
+                <button id="btnSubmit4" type="button" class="btn btn-primary mt-3">Tính tiền cáp</button>
+            </div>
+        </form>
+        <div class="alert alert-success w-50 mt-3" id="result4"></div>
     </div>
 
 
@@ -115,6 +141,7 @@
 <script src="./js/baitap1.js"></script>
 <script src="./js/baitap2.js"></script>
 <script src="./js/baitap3.js"></script>
+<script src="./js/baitap4.js"></script>
 
 </body>
 
